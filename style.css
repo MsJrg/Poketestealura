@@ -40,5 +40,6 @@ main {
 img {
     max-width: 90%;
     margin-bottom: 20px;
-    border-radius: 8%
+    border-radius: 10px;
+    color:White;
 }
