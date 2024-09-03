@@ -1,11 +1,7 @@
-const avanca = document.querySelectorAll('.btn-proximo');
-
-avanca.forEach(button => {
-    button.addEventListener('click', function(){
-        const atual = document.querySelector('.ativo');
-        const proximoPasso = 'passo-' + this.getAttribute('data-proximo');
-
-        atual.classList.remove('ativo');
-        document.getElementById(proximoPasso).classList.add('ativo');
-    })
-})
+document.querySelectorAll('.btn-proximo').forEach(button => {
+    button.addEventListener('click', function() {
+        const proximoPasso = this.getAttribute('data-proximo');
+        document.querySelector('.passo.ativo').classList.remove('ativo');
+        document.getElementById('passo-' + proximoPasso).classList.add('ativo');
+    });
+});
