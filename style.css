@@ -10,12 +10,12 @@ body {
 }
 
 button {
-    background-color: red;
+    background-color: white;
     color: black;
     font-family: "Bai Jamjuree", sans-serif;
     padding: 10px 20px;
     margin: 10px;
-    border: 2px solid white; /* Borda branca */
+    border: 2px solid #FFFA8A; /* Borda branca */
     cursor: pointer;
     border-radius: 5px; /* Arredondar os cantos dos botões */
 }
