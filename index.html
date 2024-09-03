@@ -6,83 +6,112 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Em busca da cidade perdida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <title>Aventura Pokémon</title>
 </head>
 <body>
     <main>
+        <!-- Passo 1: Escolha do Pokémon inicial -->
         <div class="passo ativo" id="passo-0">
-            <img src="img/cenario-passo0.png" alt="">
-            <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
-            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
-            <button class="btn-proximo" data-proximo="2">Pernambuco</button>
+            <img src="img/professor-oak.png" alt="Professor Oak">
+            <p>O Professor Oak lhe oferece três Pokémon. Qual você escolherá para começar sua jornada?</p>
+            <button class="btn-proximo" data-proximo="1">Charmander</button>
+            <button class="btn-proximo" data-proximo="2">Squirtle</button>
+            <button class="btn-proximo" data-proximo="3">Bulbasaur</button>
         </div>
+
+        <!-- Passo 2: Escolha Charmander -->
         <div class="passo" id="passo-1">
-            <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
-            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
-            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+            <img src="img/charmander.png" alt="Charmander">
+            <p>Você escolheu Charmander! Agora, você está pronto para enfrentar seu primeiro desafio.</p>
+            <button class="btn-proximo" data-proximo="4">Ir para o Desafio</button>
         </div>
+
+        <!-- Passo 3: Escolha Squirtle -->
         <div class="passo" id="passo-2">
-            <p>Em Pernambuco, você visita a histórica cidade de Olinda. Na carta, uma das pistas indica que para localizar a entrada para a cidade perdida você deve procurar a próxima pista em um dos pontos turísticos da cidade. Por qual você começa?</p>
-            <button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas</button>
-            <button class="btn-proximo" data-proximo="6">Explorar as praias próximas</button>
+            <img src="img/squirtle.png" alt="Squirtle">
+            <p>Você escolheu Squirtle! Prepare-se para seu primeiro desafio.</p>
+            <button class="btn-proximo" data-proximo="4">Ir para o Desafio</button>
         </div>
+
+        <!-- Passo 4: Escolha Bulbasaur -->
         <div class="passo" id="passo-3">
-            <p>No topo do Pico da Tijuca, você encontra uma antiga inscrição apontando que a próxima pista está
-                localizada no Amazonas.</p>
-            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+            <img src="img/bulbasaur.png" alt="Bulbasaur">
+            <p>Você escolheu Bulbasaur! Agora, você pode começar sua jornada.</p>
+            <button class="btn-proximo" data-proximo="4">Ir para o Desafio</button>
         </div>
 
+        <!-- Passo 5: Primeira batalha -->
         <div class="passo" id="passo-4">
-            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
-            <p>Você decide que a aventura é grande demais e volta para casa, mas sempre se pergunta o que teria
-                encontrado.</p>
+            <img src="img/batalha.png" alt="Batalha Pokémon">
+            <p>Seu rival desafia você para uma batalha! Você aceita?</p>
+            <button class="btn-proximo" data-proximo="5">Sim, vamos batalhar!</button>
+            <button class="btn-proximo" data-proximo="6">Não, preciso treinar mais.</button>
         </div>
 
+        <!-- Passo 6: Batalha vencida -->
         <div class="passo" id="passo-5">
-            <p>Nas igrejas de Olinda, você descobre um mapa antigo escondido atrás de um altar, apontando que a próxima
-                pista está no Amazonas.</p>
-            <button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
+            <img src="img/vitoria.png" alt="Vitória na batalha">
+            <p>Parabéns! Você venceu a batalha contra seu rival.</p>
+            <button class="btn-proximo" data-proximo="7">Continuar Jornada</button>
         </div>
 
+        <!-- Passo 7: Fugir da batalha -->
         <div class="passo" id="passo-6">
-            <p>Explorando as praias, você encontra uma caverna escondida, mas ela leva a um beco sem saída.</p>
-            <button class="btn-proximo" data-proximo="8">Voltar e explorar as igrejas</button>
+            <img src="img/fugir.png" alt="Fuga da batalha">
+            <p>Você decidiu não enfrentar seu rival. Talvez outra hora...</p>
+            <button class="btn-proximo" data-proximo="4">Tentar Novamente</button>
         </div>
 
+        <!-- Passo 8: Floresta de Viridian -->
         <div class="passo" id="passo-7">
-            <p>No Amazonas, a busca pela cidade perdida se intensifica. Você se depara com um rio bifurcado.</p>
-            <button class="btn-proximo" data-proximo="9">Seguir pelo rio à esquerda</button>
-            <button class="btn-proximo" data-proximo="10">Seguir pelo rio à direita</button>
+            <img src="img/floresta-viridian.png" alt="Floresta de Viridian">
+            <p>Você chega à Floresta de Viridian. Deseja explorar ou seguir em frente?</p>
+            <button class="btn-proximo" data-proximo="8">Explorar</button>
+            <button class="btn-proximo" data-proximo="9">Seguir em Frente</button>
         </div>
 
+        <!-- Passo 9: Exploração na Floresta de Viridian -->
         <div class="passo" id="passo-8">
-            <p>De volta às igrejas, você finalmente encontra o mapa antigo. Agora, para o Amazonas!</p>
-            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+            <img src="img/pikachu.png" alt="Encontro com Pikachu">
+            <p>Explorando a floresta, você encontra um Pikachu selvagem! Deseja capturá-lo?</p>
+            <button class="btn-proximo" data-proximo="10">Sim, capturar Pikachu</button>
+            <button class="btn-proximo" data-proximo="11">Não, deixar Pikachu em paz</button>
         </div>
 
-        <div class="passo" id="passo-9">
-            <p>O rio à esquerda leva você a uma cachoeira escondida com inscrições antigas que revelam a entrada da
-                cidade perdida.</p>
-            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
-        </div>
-
+        <!-- Passo 10: Captura Pikachu -->
         <div class="passo" id="passo-10">
-            <p>O rio à direita termina em uma área pantanosa. Apesar de belas vistas, não há sinais da cidade perdida
-                aqui.</p>
-            <button class="btn-proximo" data-proximo="12">Retornar e tentar o outro rio</button>
+            <img src="img/captura.png" alt="Captura de Pikachu">
+            <p>Você capturou Pikachu! Agora, ele é seu companheiro de jornada.</p>
+            <button class="btn-proximo" data-proximo="12">Continuar</button>
         </div>
 
+        <!-- Passo 11: Seguir sem capturar Pikachu -->
         <div class="passo" id="passo-11">
-            <img src="img/cenario-passo11-cidade-perdida.png" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
-            <p>Dentro da cidade perdida, você descobre tesouros inimagináveis e decide se dedicar a estudar e preservar
-                este lugar</p>
+            <img src="img/pikachu-selvagem.png" alt="Pikachu selvagem">
+            <p>Você decide não capturar Pikachu e segue seu caminho.</p>
+            <button class="btn-proximo" data-proximo="12">Continuar</button>
         </div>
 
+        <!-- Passo 12: Chegada à Pewter City -->
         <div class="passo" id="passo-12">
-            <p>Retornando e escolhendo o rio à esquerda, você finalmente encontra a cachoeira escondida e as inscrições
-                que levam à cidade perdida.</p>
-            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
+            <img src="img/pewter-city.png" alt="Pewter City">
+            <p>Você chegou à Pewter City, onde está o próximo Ginásio Pokémon. Deseja desafiar o Líder de Ginásio?</p>
+            <button class="btn-proximo" data-proximo="13">Sim, desafiar o Líder</button>
+            <button class="btn-proximo" data-proximo="14">Não, preciso treinar mais</button>
+        </div>
+
+        <!-- Passo 13: Desafio ao Líder do Ginásio -->
+        <div class="passo" id="passo-13">
+            <img src="img/lider-ginasio.png" alt="Líder de Ginásio">
+            <p>Você desafia o Líder do Ginásio Brock para uma batalha! Está pronto?</p>
+            <button class="btn-proximo" data-proximo="15">Sim, vamos lá!</button>
+        </div>
+
+        <!-- Passo 14: Vitória no Ginásio -->
+        <div class="passo" id="passo-14">
+            <img src="img/insignia.png" alt="Insígnia de Ginásio">
+            <p>Você venceu Brock e ganhou sua primeira insígnia de Ginásio! Parabéns, Treinador!</p>
         </div>
     </main>
     <script src="script.js"></script>
